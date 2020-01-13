@@ -1,0 +1,130 @@
+/**
+ * border radius
+ */
+
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0.25rem;
+}
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+/* .sticky-footer {
+  flex-shrink: none;
+} */
+/* black shade form 10-1 */
+.black-10 {
+  background: #f2f2f2;
+}
+.black-9 {
+  background: #e6e6e6;
+}
+.black-8 {
+  background: #d9d9d9;
+}
+.black-7 {
+  background: #cccccc;
+}
+.black-6 {
+  background: #bfbfbf;
+}
+.black-5 {
+  background: #b3b3b3;
+}
+
+.jumbotron h2 {
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron h2 {
+    margin-top: 20px;
+  }
+}
+
+/**
+ * jumbotron animation
+ */
+
+.jumbotron {
+  height: 180px;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Home Image */
+.App {
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 183px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  /* min-height: 100vh; */
+}
+.container {
+  padding: -20px;
+}
+/* Home button */
+.main-link {
+  padding: 0.5rem 1rem;
+  background: #5fb7ea;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  outline: 2px solid #5fb7ea;
+  outline-offset: 4px;
+  border: none;
+
+  transition: all 0.3s ease-in-out;
+}
